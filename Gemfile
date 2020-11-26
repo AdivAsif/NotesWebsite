@@ -71,3 +71,5 @@ gem 'jquery-rails'
 
 gem 'jquery-validation-rails'
 gem 'haml-rails'
+
+gem 'rails-controller-testing'
