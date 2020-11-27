@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+welcome = Note.where(title: 'Welcome').first
+welcome.delete if welcome
+
+notes = Note.create([title: 'Welcome', description: ' to the notes app.'])
