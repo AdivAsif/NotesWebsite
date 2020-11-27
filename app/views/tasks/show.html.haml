@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @task.title
+%p
+  %b Note:
+  = @task.note.title
+
+= link_to I18n.t('.edit'), edit_task_path(@task)
+\|
+= link_to I18n.t('.back'), tasks_path
