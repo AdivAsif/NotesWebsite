@@ -76,3 +76,5 @@ gem 'haml-rails'
 gem 'rails-controller-testing'
 
 gem 'devise'
+
+gem 'sprockets'
