@@ -1,2 +1,18 @@
-%h1=t('.title')
-%p=t('.welcome')
+%h1{id: "welcome_id"} Welcome to my site
+%p{id: "welcomep"} This is a welcoming paragraph
+
+%h2{id: "n", onclick: "ToggleText(this)"} Notes
+%a{:href => "/notes", id: "np"} Your saved notes.
+%p
+
+%h2{id: "t", onclick: "ToggleText(this)"} Tasks
+%a{:href => "/tasks", id: "tp"} Your tasks associated with your notes.
+%p
+
+%input#smallb{id: "button1", onclick: "SetFontSize('80%')", type: "button", value: "Small"}
+%input#mediumb{onclick: "SetFontSize('100%')", type: "button", value: "Medium"}
+%input#largeb{onclick: "SetFontSize('120%')", type: "button", value: "Large"}
+
+%p
+%input#normalb{onclick: "SetPageStyle('Normal')", type: "button", value: "Normal"}
+%input#darkb{onclick: "SetPageStyle('Dark')", type: "button", value: "Dark"}

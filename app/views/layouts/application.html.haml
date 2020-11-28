@@ -17,5 +17,6 @@
 
   %body
     = render 'shared/header'
-    = yield
-    = render 'shared/footer'
+    %div#main_content
+      = yield
+      = render 'shared/footer'
